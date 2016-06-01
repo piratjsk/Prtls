@@ -1,0 +1,11 @@
+name: ${project.name}
+version: ${project.version}
+description: ${project.description}
+author: piratjsk
+
+main: net.piratjsk.portals.Portals
+
+commands:
+   portals:
+      description: Shows the number of active portals.
+      aliases: [portal,portale]
