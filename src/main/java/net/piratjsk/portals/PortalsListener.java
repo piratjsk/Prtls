@@ -69,7 +69,7 @@ public final class PortalsListener implements Listener {
     @EventHandler
     public void onPortalUse(final PlayerInteractEvent event) {
         final Player player = event.getPlayer();
-        final ItemStack ticket = player.getItemInHand();
+        final ItemStack ticket = player.getInventory().getItemInMainHand();
         if (ticket.getType().equals(Material.PAPER) && ticket.getItemMeta().hasDisplayName()) {
             if (player.getInventory().contains(Material.GOLD_INGOT)) {
                 final Location loc = player.getLocation().getBlock().getRelative(BlockFace.DOWN).getLocation();
