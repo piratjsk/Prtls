@@ -85,4 +85,9 @@ public class PortalsManager {
         storage.savePortals(this.portals);
     }
 
+    public void load() {
+        if (this.storage==null) return;
+        this.portals = storage.loadPortals();
+    }
+
 }

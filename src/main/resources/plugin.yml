@@ -9,3 +9,11 @@ commands:
    portals:
       description: Shows the number of active portals.
       aliases: [portal,portale]
+
+permissions:
+  portals.load:
+    description: Allows to use 'portals load' command.
+    default: op
+  portals.save:
+    description: Allows to use 'portals save' command.
+    default: op
