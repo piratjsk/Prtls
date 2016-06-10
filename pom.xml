@@ -6,7 +6,7 @@
 
     <groupId>io.github.piratjsk</groupId>
     <artifactId>portals</artifactId>
-    <version>1.0</version>
+    <version>1.1-dev</version>
     <name>Portals</name>
     <description>Portals based on dispensers and enderman's power.</description>
 
@@ -25,7 +25,7 @@
         <dependency>
             <groupId>org.bukkit</groupId>
             <artifactId>bukkit</artifactId>
-            <version>1.9.4-R0.1-SNAPSHOT</version>
+            <version>1.10-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
         <dependency>
