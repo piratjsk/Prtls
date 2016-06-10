@@ -1,5 +1,6 @@
 package net.piratjsk.portals;
 
+import org.bukkit.GameMode;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.Sound;
@@ -71,7 +72,7 @@ public final class PortalsListener implements Listener {
         final Player player = event.getPlayer();
         final ItemStack ticket = player.getInventory().getItemInMainHand();
         if (ticket.getType().equals(Material.PAPER) && ticket.getItemMeta().hasDisplayName()) {
-            if (player.getInventory().contains(Material.GOLD_INGOT)) {
+            if (player.getInventory().contains(Material.GOLD_INGOT) || player.getGameMode().equals(GameMode.CREATIVE)) {
                 final Location loc = player.getLocation().getBlock().getRelative(BlockFace.DOWN).getLocation();
                 if (manager.hasPortal(loc)) {
                     final String name = ticket.getItemMeta().getDisplayName();
